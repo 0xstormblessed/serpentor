@@ -1,0 +1,45 @@
+{
+  "name": "serpentor",
+  "version": "0.1.0",
+  "description": "A set of smart contracts tools for governance written in vyper",
+  "keywords": [
+    "security",
+    "library",
+    "ethereum",
+    "smart-contracts",
+    "evm",
+    "vyper",
+    "vyper-contracts",
+    "foundry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storming0x/serpentor.git"
+  },
+  "homepage": "https://github.com/storming0x/serpentor#readme",
+  "bugs": {
+    "url": "https://github.com/storming0x/serpentor/issues"
+  },
+  "author": " storming0x <storming0x@roshar.ro>",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "prettier:check": "prettier -c **/*.{md,sol,yml}",
+    "prettier:fix": "prettier -w **/*.{md,sol,yml}",
+    "solhint:check": "npx solhint '**/*.sol'",
+    "solhint:fix": "npx solhint '**/*.sol' --fix",
+    "lint:check": "yarn prettier:check && yarn solhint:check && eslint .",
+    "lint:fix": "yarn prettier:fix && yarn solhint:fix && eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ethers": "^5.6.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.32",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
+  },
+  "dependencies": {
+    "hardhat": "^2.10.1"
+  }
+}
